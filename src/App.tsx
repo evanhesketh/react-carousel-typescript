@@ -16,7 +16,7 @@ function App() {
   // In real life, this data would probably come from an AJAX call.
   // For our purposes, we're just importing from another file.
   const carouselPhotos: PhotoInterface[] = photos;
-  const carouselTitle: String = "Shells from far-away beaches";
+  const carouselTitle: string = "Shells from far-away beaches";
 
   return (
     <div className="App">

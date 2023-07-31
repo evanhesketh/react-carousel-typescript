@@ -1,6 +1,13 @@
 import React from "react";
 import "./Card.css";
 
+interface CardPropsInterface {
+  caption: string;
+  src: string;
+  currNum: number;
+  totalNum: number;
+};
+
 /** Card: displays image.
  *
  * Props:
@@ -15,8 +22,7 @@ import "./Card.css";
  * App --> Carousel --> Card
  */
 
-function Card({ caption, src, currNum, totalNum }) {
-
+function Card({ caption, src, currNum, totalNum }: CardPropsInterface) {
   return (
     <div className="Card">
       <h4 className="Card-title">{caption}</h4>

@@ -5,7 +5,7 @@ import { PhotoInterface } from "./interfaces";
 
 interface CarouselPropsInterface {
   photos: PhotoInterface[];
-  title: String;
+  title: string;
 };
 
 /** Carousel: displays images and arrows to navigate through them
