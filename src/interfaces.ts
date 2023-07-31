@@ -1,6 +1,6 @@
-interface Photo {
+interface PhotoInterface {
   src: HTMLImageElement;
   caption: String;
 }
 
-export type { Photo };
+export type { PhotoInterface };

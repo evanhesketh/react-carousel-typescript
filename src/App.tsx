@@ -1,7 +1,7 @@
 import "./App.css";
 import Carousel from "./Carousel";
 import photos from "./photos.js";
-import { Photo } from "./interfaces";
+import { PhotoInterface } from "./interfaces";
 
 /** App component, renders Carousel
  *
@@ -15,7 +15,7 @@ function App() {
 
   // In real life, this data would probably come from an AJAX call.
   // For our purposes, we're just importing from another file.
-  const carouselPhotos: Photo[] = photos;
+  const carouselPhotos: PhotoInterface[] = photos;
   const carouselTitle: String = "Shells from far-away beaches";
 
   return (

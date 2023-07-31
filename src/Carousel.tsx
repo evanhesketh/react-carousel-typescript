@@ -1,6 +1,12 @@
 import { useState } from "react";
 import "./Carousel.css";
 import Card from "./Card";
+import { PhotoInterface } from "./interfaces";
+
+interface CarouselPropsInterface {
+  photos: PhotoInterface[];
+  title: String;
+};
 
 /** Carousel: displays images and arrows to navigate through them
  *
@@ -13,7 +19,7 @@ import Card from "./Card";
  *
  * App --> Carousel --> Card
  */
-function Carousel({ photos, title }) {
+function Carousel({ photos, title }: CarouselPropsInterface) {
   const [currCardIdx, setCurrCardIdx] = useState(0);
 
   const currCard = photos[currCardIdx];
@@ -28,8 +34,6 @@ function Carousel({ photos, title }) {
   function goBackward() {
     setCurrCardIdx(currCardIdx - 1);
   }
-
-  //TODO: refactor so image doesn't move
 
   return (
     <div className="Carousel">
